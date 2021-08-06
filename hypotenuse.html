@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Check-Hypotenuse</title>
 </head>
 <body>
+    <div class="main-section">
+        <div class="logo-container">
+            <i class="fa fa-home" aria-hidden="true"></i> <a href="/index.html">Back To Home</a>
+        </div>
+        <h1>Enter the lengths of sides of right angled triangle</h1>
+        <img class="image" src="images/triangle.png"/>
+        <form id="inputhypo">
+        <label class="label"> a=
+            <input class="entryBox" type="number" min="1" max="180" required>
+        </label>
+        <label class="label"> b=
+            <input class="entryBox" type="number" min="1" max="180" required>
+        </label>
+        <button class="button" id="submitBtn">submit</button>
+    </form>
+    <h1>Calculation of Hypotenuse</h1>
+        <div class="outputHere">
+            <p class="para"> Formula = √(a2 + b2) </p>
+            
+          <b>H= </b>  <div class="formula" style="display: inline-block;"></div>
+           
+           
+    </div>
+
+    <script>
+        const sides= document.querySelectorAll(".entryBox");
+      var sideA, sideB;
+        const Hypotenuse = document.querySelector("#inputhypo");
+        const outputDiv= document.querySelector(".formula");
+        Hypotenuse  .addEventListener('submit', (e)=>{
+            e.preventDefault();
+            lengthA = Number(sides[0].value);  
+            lengthB = Number(sides[1].value);  
+            
+            
+            outputDiv.innerHTML = Math.sqrt((lengthA*lengthA) + (lengthB*lengthB));
+           
+        })
+
+    </script>
+    
+    
+    
     
     
 </body>
