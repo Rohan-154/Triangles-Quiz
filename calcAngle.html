@@ -8,6 +8,8 @@
     <title>Calculate Area of Triangle</title>
 </head>
 <body>
+    
+    <section class="section">
      <div class="main-section">
         <div class="logo-container">
             <i class="fa fa-home" aria-hidden="true"></i> <a href="/index.html">Back To Home</a>
@@ -35,19 +37,80 @@
 
                 <img class="image" src="images/area.png" style="margin-top: 2rem;"/>   
                 
-                  
+                  <!-- //first option -->
+                  <div class="wrapUp">
                 <form class="form" class="formAreaCal">
+                   
                     <label class="label">base=
-                        <input class="entryBox" type="number" min="0.0001" step="0.00001" required> 
+                        <input class="entryBox option1" type="number" min="0.0001" step="0.00001" required> 
                     </label>
 
                     <label class="label">height=
-                        <input class="entryBox " type="number" min="0.0001" step="0.00001" required>
+                        <input class="entryBox option1" type="number" min="0.0001" step="0.00001" required>
                     </label>
                     
                     <button class="button" id="submitBtn">calculate</button>
                 </form>
+                <h2>Area will be calculated here-</h2>
+                <div class="outputHere">
+                    <div class="area"> Area=</div>
+                    <!-- <div style="display:inline;" class="areaShowHere">1/2*base*height</div> -->
+                    <p class="para"> Formula = 1/2*base*height</p>
+                </div>  
      </div>
+     <!-- second option -->
+     <img class="image" src="images\calcAngle.png" style="margin-top: 2rem;"/>   
+     <form class="form" class="formAreaCal">
+                    
+        <label class="label">a=
+            <input class="entryBox option2" type="number" min="0.0001" step="0.00001" required>
+        </label>
+
+        <label class="label">b=
+            <input class="entryBox option2" type="number" min="0.0001" step="0.00001" required>
+        </label>
+
+        <label class="label">c=
+            <input class="entryBox option2" type="number" min="0.0001" step="0.00001" required>
+        </label>
+        <p class="label error">Enter valid side lengths such that each side length should be less than sum of other two sides</p>
+                    
+        <button class="button" id="submitBtn">calculate</button>
+    </form>
+    <h2>Area will be calculated here-</h2>
+    <div class="outputHere">
+        <div class="area"> Area=</div>
+        <p class="para"> Formula = √s(s-a)(s-b)(s-c)</p>
+        </div>
+
+        <!-- 3rd option -->
+        <img class="image" src="images\anglesArea.png" style="margin-top: 2rem;"/>  
+        <form class="form" class="formForAreaCal">
+                    
+            <label class="label">b=
+                <input class="entryBox option3"type="number" min="0.0001" step="0.00001" required>
+            </label>
+            
+            <label class="label">c=
+                <input class="entryBox option3" type="number" min="0.0001" step="0.00001" required>
+            </label>
+
+            <label class="label">∠A(deg)=
+                <input class="entryBox option3" type="number" min="0.0001" step="0.00001" max="360" required>
+            </label>
+          
+            <button class="button" id="submitBtn">calculate</button>
+        </form>
+        <h2>Area will be calculated here-</h2>
+                <div class="outputHere">
+                    <div class="area"> Area=</div>
+                    <p class="para"> Formula = 1/2*a*b*sin(α)</p>
+                    
+                </div>
+            </section>
+            <script src="calcAngle.js"></script>
+        </div>
+
     
 </body>
 </html>
