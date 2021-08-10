@@ -1,0 +1,232 @@
+:root{
+    --primary-color: #F5F3FF;
+   
+}
+body{
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #5B21B6;
+      
+}
+.arrange1{
+    text-decoration: none;
+    display:block;
+    text-align: center;
+    color: #111827;
+    border: 4px solid #8B5CF6;    
+    padding: 10px 20px;
+    text-align: center;
+    box-sizing: content-box;
+    width: 20%;
+    margin:3rem auto; 
+    font-weight: bolder;
+    font-size:larger;
+}
+.arrange2{
+
+    text-decoration: none;
+    display:block;
+    margin-bottom: 2rem;
+    
+    color: #111827;
+    border: 4px solid #8B5CF6;    
+    padding: 10px 20px;
+    text-align: center;
+    box-sizing: content-box;
+    width: 20%;
+    margin:3rem auto; 
+    font-weight:bolder;
+    font-size:larger;
+    
+}
+a:-webkit-any-link {
+    
+    cursor: pointer;
+    text-decoration:none;
+}
+
+  .arrange2:hover {
+    background-color: #8B5CF6;
+    color: white;
+  } 
+  .arrange1:hover {
+    background-color: #8B5CF6;
+    color: white;
+  } 
+  .body1{
+      background-image: url("images/bg-main.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      min-height: 100vh;
+      margin: 0;
+     
+  }
+  .list-non-bullet{
+     position: fixed;
+     top: 0pt; 
+     right: 0pt;
+     list-style: none;
+     
+  }
+  ul li{
+    display: inline;
+    padding: 1rem;
+    
+  }
+  .fa-twitter-square {
+    color: #00acee;
+
+
+}
+
+.fa-github-square {
+
+    color: #211F1F;
+
+
+}
+.fa-linkedin{
+    color: #0077b5;
+}
+
+.fa-home{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+ 
+
+}
+.link1{
+  text-decoration: none;
+  display:block;
+  color: #111827;
+  text-align: center;
+  width: 20%;
+  margin:0rem auto; 
+  font-weight:bolder;
+  font-size:larger;
+}
+.para{
+    text-align: center;
+    margin-top: 5rem;
+    font-size:x-large;
+    color: #F87171;
+    font-weight: bolder ;
+
+}
+.entryBox{
+    height: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+  
+
+}
+.form{
+    text-align: center;
+   
+}
+.button{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: #e7e7e7;
+    border: 2px solid #4B5563;
+  
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+  
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+.button:hover{
+   background-color: #4B5563;
+   color: white;
+}
+.outputHere{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: larger;
+}
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.label{
+    font-weight: bold;
+    display: inline-block;
+    font-size: larger   ;
+}
+.division{
+    margin: auto;
+    display: inline-block;
+}
+.fa .fas {
+    font-weight: bolder;
+}
+h2{
+    color: #F87171;
+}
+.radio-type{
+ padding: 1rem;
+}
+.para{
+    margin-top: 1rem;
+}
+.quiz-form{
+   
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+   
+
+
+
+.question-container input{
+    cursor: pointer;
+padding: 0.5rem 0.5rem;
+display: inline-block;
+}
+.question-container{
+    padding: 0.5rem 1rem;
+    white-space: normal;
+}
+#submit-button{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: #e7e7e7;
+    border: 2px solid #4B5563;
+  
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+  
+    font-size: 16px;
+    cursor: pointer;
+}
+#submit-button:hover{
+    background-color: #4B5563;
+    color: white;
+ }
+ @media screen and (max-width: 768px){
+    body{
+    background-image: url('images/bg-main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    }
+}
